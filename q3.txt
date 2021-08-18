@@ -1,0 +1,30 @@
+int main(void)
+{
+	int num1, num2, num3;
+	double avg;
+	printf("학생의 국어 영어 수학 점수는 몇 점입니까?: ");
+	scanf("%d %d %d", &num1, &num2, &num3);
+	avg = (num1 + num2 + num3) / 3;
+	printf("학생의 평균 점수는 %f입니다.", avg);
+
+	if (avg >= 90)
+	{
+		printf("학점: A");
+	}
+	else if (90 > avg >= 80)
+	{
+		printf("학점: B");
+	}
+	else if (80 > avg >= 70)
+	{
+		printf("학점: C");
+	}
+	else if (70 > avg >= 50)
+	{
+		printf("학점: D");
+	}
+	else
+		printf("축하드립니다 학고에요!: F");
+
+	return 0;
+}
